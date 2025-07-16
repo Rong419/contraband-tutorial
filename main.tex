@@ -336,8 +336,8 @@ All other clock parameters are also automatically set by BEAUti2.
 
 \begin{figure}[!htbp]
     \centering
-    \includegraphics[width=0.700000\textwidth]{figures/BMClockModel.png}
-    \caption{Choosing the relaxed uncorrelated clock model and initializing $c_m$ \textcolor{red}{[@Rong: update screenshot to use the standard UCLN model]}.}
+    \includegraphics[width=0.700000\textwidth]{figures/BMucln.png}
+    \caption{Choosing the relaxed uncorrelated clock model and initializing $c_m$.}
     \label{fig:example5}
 \end{figure}
 
@@ -379,7 +379,7 @@ It should be possible to now run our analysis by giving BEAST2 the \texttt{.xml}
 
 Convergence of the Markov chain initiated by running the \texttt{.xml} generated above will take a long while, so we will processes the results of a precooked run (in the \texttt{precooked-runs/} directory).
 In fact, this precooked run was also not run for very long, as you will see.
-Open the Tracer application and load file \textcolor{red}{\texttt{[PLACE EXACT FILE NAME HERE].log}}.
+Open the Tracer application and load file ``BM.log".
 
 The first thing we will note is that the ESS values are all below 200 and shown in red (\autoref{fig:bm_res1}) -- obviously our Markov chain needs to run for much longer for us to safely conclude anything about the biological system we are studying.
 
